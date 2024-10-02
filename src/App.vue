@@ -7,18 +7,21 @@
 </script>
 
 <template>
-  <nav class="flex justify-between items-center p-4 bg-rose-300 rounded-b-lg sticky top-0">
-    <router-link to="/" class="text-2xl">Kitchat</router-link>
-    
-    <ul class="flex gap-4 justify-center w-3/5 lg:w-2/5 xl:w-1/3 flex-row">
+  <div class="relative">
+    <nav class="flex justify-between items-center p-4 bg-rose-300 rounded-b-lg fixed top-0 w-full">
+      <router-link to="/" class="text-2xl">Kitchat</router-link>
+      
+      <ul class="flex gap-4 justify-center w-3/5 lg:w-2/5 xl:w-1/3 flex-row">
+  
+        <li><router-link to="/" class="block text-xl">Home</router-link></li>
+        <li><router-link to="/feed" class="block text-xl">Feed</router-link></li>
+        <li><router-link to="/register" class="block text-xl">Crear Cuenta</router-link></li>
+        <li><router-link to="/login" class="block text-xl">Iniciar Sesión</router-link></li>
+      </ul>
+  
+    </nav>
 
-      <li><router-link to="/" class="block text-xl">Home</router-link></li>
-      <li><router-link to="/feed" class="block text-xl">Feed</router-link></li>
-      <li><router-link to="/register" class="block text-xl">Crear Cuenta</router-link></li>
-      <li><router-link to="/login" class="block text-xl">Iniciar Sesión</router-link></li>
-    </ul>
-
-  </nav>
+  </div>
 
   <main class="p-4">
     <router-view/>

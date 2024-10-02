@@ -7,7 +7,9 @@
         <div class="h-52 w-72 bg-slate-400 mb-8">
         </div>
 
-        <H1>Kitchat</H1>
+        <H1>Página landing</H1>
+
+        <h1 class="text-4xl">Kitchat</h1>
     </div>
 
     <div class="flex justify-center">
