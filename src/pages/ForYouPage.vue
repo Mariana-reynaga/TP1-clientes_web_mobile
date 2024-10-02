@@ -1,9 +1,9 @@
 <script setup>
-    
+    import H1 from '../components/TitleH1.vue';
 </script>
 
 <template>
 
-    <h1>Pagina de posts</h1>
+    <H1>Página de feed</H1>
 
 </template>

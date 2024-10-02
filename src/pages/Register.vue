@@ -1,9 +1,9 @@
 <script setup>
-    
+    import H1 from '../components/TitleH1.vue';
 </script>
 
 <template>
 
-    <h1>Crear una cuenta</h1>
+    <H1>Página de registro</H1>
 
 </template>

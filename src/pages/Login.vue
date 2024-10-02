@@ -1,9 +1,7 @@
 <script setup>
-    
+    import H1 from '../components/TitleH1.vue';
 </script>
 
 <template>
-
-    <h1>Iniciar Sesión</h1>
-
+    <H1>Página de login</H1>
 </template>
