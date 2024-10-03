@@ -2,9 +2,8 @@
     import H1 from '../components/TitleH1.vue';
     import {ref, onMounted} from 'vue'
 
-    // Firestore
-    import { db } from '../services/firebase.js';
-    import { collection, addDoc, getDocs, onSnapshot } from 'firebase/firestore';
+    // Services
+    import { savePosts, subToPosts } from '../services/post-feeds.js';
 
     const posts = ref([]);
 
@@ -14,22 +13,11 @@
     });
 
     onMounted(async() =>{
-        const postRef = collection(db, 'public-post');
-
-        onSnapshot(postRef, snapshot=>{
-            posts.value = snapshot.docs.map(doc =>{
-                return {
-                    id: doc.id,
-                    message: doc.data().message,
-                }
-            });
-        })
+        subToPosts(newPosts => posts.value = newPosts);
     });
 
     function handleSubmit(){
-        const postRef = collection(db, 'public-post');
-
-        addDoc(postRef, {
+        savePosts({
             ...newPost.value,
         });
 
@@ -77,11 +65,16 @@
     
         <div class="w-2/3 max-h-[32rem] overflow-auto">
             <div class="flex items-center flex-col">
-                <div class="bg-rose-200 w-3/4 rounded p-4 flex items-center gap-8 my-3 min-h-10 shadow-md shadow-pink-500/50" v-for="posts in posts">
-                    <div class="w-1/3 flex align-baseline justify-center min-h-20">
+                <div class="bg-rose-200 w-3/4 rounded p-4 flex items-center my-3 min-h-10 shadow-md shadow-pink-500/50" v-for="posts in posts">
+                    <div class="w-1/6 flex align-baseline justify-start min-h-20">
                         <div class="w-16 h-16 bg-slate-200 rounded-full"></div>
                     </div>
-                    <p>{{ posts.message }}</p>
+
+                    <div class="flex flex-col w-4/5">
+                        <p class="mb-4">User dice:</p>
+                        <p>{{ posts.message }}</p>
+                    </div>
+
                 </div>
 
             </div>
