@@ -12,7 +12,6 @@ dist
 dist-ssr
 *.local
 src/services/firebase.js
-src/services/post-feeds.js
 
 # Editor directories and files
 .vscode/*
