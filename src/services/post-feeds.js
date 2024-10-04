@@ -5,7 +5,6 @@ import { collection, addDoc, onSnapshot, serverTimestamp, query, orderBy } from 
 * @param {{message: String }} newPost
 *@returns {Promise}
 */
-
 export async function savePosts({ message }){
     const postRef = collection(db, 'public-post');
 
