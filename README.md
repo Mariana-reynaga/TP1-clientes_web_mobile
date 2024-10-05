@@ -1,5 +1,15 @@
-# Vue 3 + Vite
+# TP1 - Clientes Web mobile
+## Reynaga Mariana
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Mi proyecto es una red Social para amantes de los gatos.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Funciones: 
+
+- Login
+- Logout
+- Crear una cuenta
+- Postear
+- Cambiar datos de la cuenta (Nombre, biografia, cumpleaños)
+
+
+Lamentablemente por tiempo limitado no pude crear un metodo para que cada publicación tenga el id del user que la creo, por ende no hay usernames que digan quien la hizo o puedan verse todas las publicaciones que un user hizo en su perfil.

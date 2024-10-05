@@ -45,7 +45,7 @@
     <div class="flex justify-between my-8 min-h-full">
         <div class="w-1/4 flex flex-col align-baseline ms-3 pe-3 gap-y-10 border-e-4 border-rose-200/50">
             <div class="flex items-center gap-14">
-                <div class="bg-slate-200 rounded-full w-16 h-16"></div>
+                <img src="/public/img/profile-pic.png" alt="Foto de perfil" class="bg-slate-200 h-26 w-26 rounded-full mb-5">
                 <h3>{{ loggedUser.displayName || 'Usuario Anonimo' }}</h3>
             </div>
 
@@ -79,7 +79,8 @@
             <div class="flex items-center flex-col">
                 <div class="bg-rose-200 w-3/4 rounded p-4 flex items-center my-3 min-h-10 shadow-md shadow-pink-500/50" v-for="posts in posts">
                     <div class="w-1/6 flex align-baseline justify-start min-h-20">
-                        <div class="w-16 h-16 bg-slate-200 rounded-full"></div>
+                        <!-- <div class="w-16 h-16 bg-slate-200 rounded-full"></div> -->
+                        <img src="/public/img/pawprint.png" alt="Foto de perfil" class="w-16 h-16 rounded-full mb-5">
                     </div>
 
                     <p>{{ posts.message }}</p>

@@ -20,8 +20,9 @@
 
 <template>
     <div class="flex flex-col items-center">
-        <div class="h-52 w-72 bg-slate-400 mb-8">
-        </div>
+        <img src="/public/img/pawprint.png" class="h-72 w-72 mb-8">
+        <!-- <div class="h-52 w-72 bg-slate-400 mb-8">
+        </div> -->
 
         <H1>Página landing</H1>
 
@@ -64,7 +65,8 @@
                     ¡Únete a la comunidad y comparte el amor por los gatos! </p>
                 </div>
     
-                <div class="w-80 h-80 bg-slate-200"></div>
+                <!-- <div class="w-80 h-80 bg-slate-200"></div> -->
+                <img src="/public/img/cat-logo.png" alt="" class="w-80 h-80 rounded-full">
             </div>
     
         </div>

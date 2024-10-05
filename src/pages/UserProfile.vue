@@ -14,6 +14,8 @@
         bday: null
     });
 
+    
+
     onMounted(()=>{
         unsubFromAuth = subToAuthChanges(newUserData=> loggedUser.value = newUserData);
     });
@@ -33,7 +35,7 @@
 
         <div class="flex justify-center mt-8 mx-10 ">
             <div class="w-1/3">
-                <img src="" alt="Foto de perfil" class="bg-slate-200 h-20 w-20 rounded-full mb-5">
+                <img src="/public/img/profile-pic.png" alt="Foto de perfil" class="bg-slate-200 h-26 w-26 rounded-full mb-5">
 
                 <div class="flex flex-col">
                     <h2 class="text-xl font-semibold mb-3">Sobre mi:</h2>
